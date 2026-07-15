@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/TUF/AppData/Local/Temp/claude/c--laragon-www-template-portfolio-ib/2471773f-a0b6-4774-8465-561329896e5b/tasks/**)",
+      "mcp__chrome-devtools__new_page",
+      "mcp__chrome-devtools__list_console_messages",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__evaluate_script",
+      "Read(//c/Users/TUF/AppData/Local/Temp/chrome-devtools-mcp-4vQTmo/**)",
+      "Bash(mkdir -p projects/anemia-api projects/backend-inventory-express projects/cms projects/complaint projects/gemini-ai-api projects/gemini-chatbot-api projects/malimo-report projects/organization projects/pos projects/rental projects/tourism)",
+      "Bash(mv \"Screenshots Application anem.ai.png\" projects/anemia-api/)",
+      "Bash(mv \"Branding 2.png\" projects/anemia-api/)",
+      "Bash(cp \"projects/anemia-api/Branding 2.png\" \"projects/backend-inventory-express/Branding 2.png\")",
+      "Bash(mv \"Gemini_Generated_Image_ia8cdcia8cdcia8c.png\" projects/gemini-ai-api/)",
+      "Bash(sed -i 's#/images/Branding 2\\\\.png#/images/projects/anemia-api/Branding 2.png#g; s#/images/Screenshots Application anem\\\\.ai\\\\.png#/images/projects/anemia-api/Screenshots Application anem.ai.png#g' anemia-api.md)",
+      "Bash(sed -i 's#/images/Branding 2\\\\.png#/images/projects/backend-inventory-express/Branding 2.png#g' backend-inventory-express.md)",
+      "Bash(sed -i 's#/images/news-cms-filament\\\\.jpg#/images/projects/cms/news-cms-filament.jpg#g' cms.md)",
+      "Bash(sed -i 's#/images/complaint-management\\\\.jpg#/images/projects/complaint/complaint-management.jpg#g' complaint.md)",
+      "Bash(sed -i 's#/images/Gemini_Generated_Image_ia8cdcia8cdcia8c\\\\.png#/images/projects/gemini-ai-api/Gemini_Generated_Image_ia8cdcia8cdcia8c.png#g' gemini-ai-api.md)",
+      "Bash(tail -5 \"/c/Users/TUF/AppData/Local/Temp/claude/c--laragon-www-template-portfolio-ib/2471773f-a0b6-4774-8465-561329896e5b/tasks/b78uup9yx.output\")",
+      "Bash(curl -s -o /dev/null -w \"detail pos: %{http_code}\\\\n\" http://localhost:3000/projects/pos)",
+      "mcp__chrome-devtools__take_screenshot",
+      "Bash(curl -s http://localhost:3000/projects/pos)",
+      "Bash(curl -s -o /dev/null -w \"status: %{http_code}\\\\n\" http://localhost:3000/projects/pos)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s -o /dev/null -w \"ipv4 status: %{http_code}\\\\n\" --max-time 3 http://127.0.0.1:3000/)",
+      "Bash(curl -s -o /dev/null -w \"ipv6 status: %{http_code}\\\\n\" --max-time 3 http://[::1]:3000/)"
+    ]
+  }
+}
