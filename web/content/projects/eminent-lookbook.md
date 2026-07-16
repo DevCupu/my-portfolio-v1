@@ -14,7 +14,7 @@ gallery:
   - src: /images/projects/eminent-lookbook/admin.png
     alt: Admin dashboard — revenue, orders, dan stok limited edition
 home:
-  order: 11
+  order: 13
   title: Eminent Club
   summary: Lookbook & e-commerce website for a Makassar fashion brand
   description: "Website lookbook premium untuk brand streetwear Eminent Club — landing page editorial, brand story, dan admin dashboard untuk kelola order dan stok limited edition."

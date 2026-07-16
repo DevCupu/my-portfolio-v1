@@ -16,7 +16,7 @@ gallery:
   - src: /images/projects/e-warung/auth.png
     alt: Halaman login Warung Daeng
 home:
-  order: 7
+  order: 9
   title: Warung Daeng
   summary: SaaS POS & inventory app for small shops (warung)
   description: "Modernisasi warung dalam hitungan menit — pencatatan stok, manajemen kasbon, dan laporan laba otomatis, menggantikan buku catatan manual."

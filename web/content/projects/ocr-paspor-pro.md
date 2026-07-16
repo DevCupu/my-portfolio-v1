@@ -14,7 +14,7 @@ gallery:
   - src: /images/projects/ocr-paspor-pro/setting.png
     alt: Dashboard Pengaturan Enterprise — API keys dan fallback routing engine
 home:
-  order: 9
+  order: 11
   title: OCR Paspor Pro
   summary: Passport MRZ scanner with multi-engine OCR for Umrah travel manifests
   description: "Sistem manifest paspor jamaah Umrah dengan mesin auto-repair checksum ICAO 9303 — mendeteksi MRZ otomatis, memvalidasi masa berlaku paspor, dan menyimpan hasilnya ke database."

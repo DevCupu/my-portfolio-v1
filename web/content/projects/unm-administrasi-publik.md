@@ -12,7 +12,7 @@ gallery:
   - src: /images/projects/unm-administrasi-publik/login page.png
     alt: Halaman login multi-role — Admin Jurusan, Staf TU, Kaprodi, Dosen, Mahasiswa
 home:
-  order: 8
+  order: 10
   title: Sistem Administrasi Jurusan Terpadu UNM
   summary: Public administration portal — Laravel 12, Inertia & Vue
   description: "Portal layanan akademik dan persuratan terpadu untuk Program Studi Ilmu Administrasi Negara UNM — ajukan surat, lacak status verifikasi, dan pantau progres tugas akhir dari satu tempat."

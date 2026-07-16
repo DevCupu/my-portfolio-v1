@@ -8,7 +8,7 @@ image:
   alt: Dante Pine Enrekang tourism and booking platform
 github: https://github.com/DevCupu/laravel-project-pariwisata-system
 home:
-  order: 4
+  order: 6
   title: Dante Pine Enrekang Tourism Platform
   summary: Tourism platform with public landing page and admin portal
   description: This Laravel 12 platform manages tourism content, activities, camping packages, café menu, and a centralized, facility-based booking system. Admins manage everything from the dashboard, while visitors book online.

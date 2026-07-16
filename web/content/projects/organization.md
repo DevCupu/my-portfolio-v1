@@ -13,7 +13,7 @@ gallery:
     alt: Tampilan fitur anggota SIORMAWA
 github: https://github.com/DevCupu/laravel-ormawa-management-system
 home:
-  order: 6
+  order: 8
   title: SIORMAWA
   summary: Student organization management system
   description: Platform manajemen organisasi kemahasiswaan dengan role terpisah untuk Admin Sistem, Admin Organisasi, dan Member. Setiap organisasi punya data anggota, event, dan dokumen sendiri — rapi, transparan, dan mudah diaudit.

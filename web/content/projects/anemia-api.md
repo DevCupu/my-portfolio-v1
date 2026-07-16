@@ -15,7 +15,7 @@ links:
   - label: "General backend REST API repository: General-RestFull-API"
     url: https://github.com/Anemi-ai/General-RestFull-API
 home:
-  order: 1
+  order: 3
   title: Anem.ai Detection API
   summary: AI-based Anemia Detection App — Bangkit 2024 Capstone
   description: Express-based RESTful API yang memproses data pemeriksaan konjungtiva mata untuk mengklasifikasikan risiko anemia pasien — dirancang sebagai backend yang siap diintegrasikan ke aplikasi mobile atau web.

@@ -9,6 +9,11 @@ const featuredProjects = computed(() =>
   [...(featured.value ?? [])].sort((a, b) => (a.home?.order ?? 0) - (b.home?.order ?? 0))
 )
 
+const { data: allProjects } = await useAsyncData('all-projects-count', () =>
+  queryCollection('projects').all()
+)
+const totalProjects = computed(() => allProjects.value?.length ?? 0)
+
 // ---- Mobile menu ----
 const mobileOpen = ref(false)
 function closeMobileMenu() {
@@ -137,6 +142,7 @@ const stackRowB = [
   { logo: '/images/tech/postman.svg', label: 'Postman' },
   { logo: '/images/tech/vite.svg', label: 'Vite' }
 ]
+const totalTechs = stackRowA.length + stackRowB.length
 
 // ---- Contact form ----
 const form = reactive({ name: '', email: '', message: '' })
@@ -301,6 +307,14 @@ useSeoMeta({
         <span>Scroll</span>
         <Icon name="feather:chevron-down" class="w-4 h-4" />
       </a>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-14 bg-white dark:bg-[#0a0a0b] border-b border-gray-100 dark:border-white/10">
+      <div v-reveal class="fade-in max-w-3xl mx-auto px-6 lg:px-8 grid grid-cols-2 gap-8">
+        <StatCounter :target="totalProjects" suffix="+" label="Projects shipped" />
+        <StatCounter :target="totalTechs" suffix="+" label="Technologies used" />
+      </div>
     </section>
 
     <!-- Tech Stack -->
@@ -505,7 +519,10 @@ useSeoMeta({
                 <Icon name="feather:calendar" class="w-4 h-4" /> Jan 15, 2026
               </time>
               <div class="md:col-span-3">
-                <h3 class="text-lg font-semibold text-ink dark:text-white mb-2">Mendeploy REST API ke Google Cloud Run</h3>
+                <h3 class="flex items-center gap-1.5 text-lg font-semibold text-ink dark:text-white mb-2">
+                  Mendeploy REST API ke Google Cloud Run
+                  <Icon name="feather:arrow-right" class="blog-arrow w-4 h-4" />
+                </h3>
                 <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
                   Catatan singkat membungkus backend Express.js ke dalam container, mengkonfigurasi environment, lalu
                   mendeploy ke Cloud Run agar bisa diakses tim lain dengan URL yang stabil dan aman.
@@ -519,7 +536,10 @@ useSeoMeta({
                 <Icon name="feather:calendar" class="w-4 h-4" /> Jan 10, 2026
               </time>
               <div class="md:col-span-3">
-                <h3 class="text-lg font-semibold text-ink dark:text-white mb-2">Menyusun Arsitektur Backend yang Cloud-ready</h3>
+                <h3 class="flex items-center gap-1.5 text-lg font-semibold text-ink dark:text-white mb-2">
+                  Menyusun Arsitektur Backend yang Cloud-ready
+                  <Icon name="feather:arrow-right" class="blog-arrow w-4 h-4" />
+                </h3>
                 <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
                   Bagaimana saya memisahkan layer bisnis, konfigurasi, dan koneksi database sehingga backend lebih mudah
                   dipindahkan antar environment — local, staging, hingga production di cloud.
@@ -533,7 +553,10 @@ useSeoMeta({
                 <Icon name="feather:calendar" class="w-4 h-4" /> Jan 5, 2026
               </time>
               <div class="md:col-span-3">
-                <h3 class="text-lg font-semibold text-ink dark:text-white mb-2">Pengalaman Menggunakan Cloud Services di Project Bangkit</h3>
+                <h3 class="flex items-center gap-1.5 text-lg font-semibold text-ink dark:text-white mb-2">
+                  Pengalaman Menggunakan Cloud Services di Project Bangkit
+                  <Icon name="feather:arrow-right" class="blog-arrow w-4 h-4" />
+                </h3>
                 <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
                   Ringkasan memakai layanan GCP (Cloud Run, Firestore, Cloud Storage) untuk mendukung aplikasi Anem.ai —
                   dari konfigurasi awal hingga monitoring sederhana agar layanan tetap sehat.

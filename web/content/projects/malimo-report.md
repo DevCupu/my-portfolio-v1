@@ -11,7 +11,7 @@ links:
   - label: "Repository GitHub: laravel-project-management-pengaduan-system"
     url: https://github.com/DevCupu/laravel-project-management-pengaduan-system
 home:
-  order: 5
+  order: 7
   title: Malimo Report
   summary: Community complaint platform for Kelurahan Malimongan
   description: Web untuk membantu masyarakat melaporkan keluhan kepada pemerintah kelurahan Malimongan, sekaligus memudahkan pemerintah kelurahan menindaklanjuti setiap laporan yang masuk.

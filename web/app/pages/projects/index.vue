@@ -10,6 +10,7 @@ const { data: projects } = await useAsyncData('all-projects', () => queryCollect
 // pages that used to be unreachable (complaint, gemini-chatbot-api)
 // appended at the end so they're finally linked from somewhere.
 const order = [
+  'raudhah-manager', 'ai-express-ollama-rag-pdf',
   'maligo', 'eminent-lookbook', 'ocr-paspor-pro', 'e-warung', 'unm-administrasi-publik',
   'malimo-report', 'organization', 'tourism', 'pos', 'rental',
   'anemia-api', 'backend-inventory-express', 'gemini-ai-api',
@@ -30,7 +31,7 @@ const sortedProjects = computed(() =>
 
     <main class="py-14 md:py-16">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 space-y-10">
-        <section class="grid md:grid-cols-[1.2fr_0.8fr] gap-8 items-center bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-[#141416] dark:via-[#0f0f10] dark:to-[#141416] rounded-3xl border border-gray-100 dark:border-white/10 px-6 md:px-10 py-8 shadow-sm">
+        <section v-reveal class="fade-in grid md:grid-cols-[1.2fr_0.8fr] gap-8 items-center bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-[#141416] dark:via-[#0f0f10] dark:to-[#141416] rounded-3xl border border-gray-100 dark:border-white/10 px-6 md:px-10 py-8 shadow-sm">
           <div class="space-y-4">
             <p class="text-xs font-semibold tracking-[0.14em] text-gray-500 dark:text-gray-400 uppercase">More projects</p>
             <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white leading-tight">Kumpulan project lain yang pernah saya garap</h1>

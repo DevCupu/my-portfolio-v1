@@ -13,7 +13,7 @@ const { data: products } = await useAsyncData('all-products', () => queryCollect
 
     <main class="py-14 md:py-16">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 space-y-10">
-        <section class="space-y-4">
+        <section v-reveal class="fade-in space-y-4">
           <p class="text-xs font-semibold tracking-[0.14em] text-gray-500 dark:text-gray-400 uppercase">Digital Products</p>
           <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white leading-tight">Produk digital yang saya jual</h1>
           <p class="text-gray-600 dark:text-gray-300 max-w-2xl">Template, source code, dan tools yang bisa langsung dipakai — hasil dari project dan eksperimen pribadi.</p>

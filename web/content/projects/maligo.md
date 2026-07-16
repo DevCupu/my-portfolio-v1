@@ -14,7 +14,7 @@ gallery:
   - src: /images/projects/maligo/ajukan layanan.png
     alt: Form pengajuan layanan bantuan sosial
 home:
-  order: 10
+  order: 12
   title: MaliGo.id
   summary: Population data & social assistance information system
   description: "Satu aplikasi untuk warga dan penyaluran bantuan sosial di Kelurahan Malimongan — cek status bantuan pakai NIK, infografis kependudukan, dan pengajuan layanan online."

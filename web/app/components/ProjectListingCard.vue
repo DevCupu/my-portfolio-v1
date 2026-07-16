@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <article class="group relative overflow-hidden rounded-2xl border border-gray-100 dark:border-white/10 bg-white dark:bg-[#141416] shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+  <article v-reveal class="fade-in group relative overflow-hidden rounded-2xl border border-gray-100 dark:border-white/10 bg-white dark:bg-[#141416] shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
     <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r" :class="gradient"></div>
     <div class="p-5 space-y-3">
       <div class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">

@@ -539,6 +539,16 @@ html.dark .project-card::after {
     transform: scale(1.06);
 }
 
+.blog-arrow {
+    opacity: 0.5;
+    transition: transform 0.25s var(--ease), opacity 0.25s var(--ease);
+}
+
+.project-card:hover .blog-arrow {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
 .skill-tag {
     transition: background 0.25s var(--ease), color 0.25s var(--ease);
 }
@@ -683,6 +693,12 @@ html.dark .hero-glow {
     width: 260px;
     height: 320px;
     border-radius: 24px;
+    animation: portraitFloat 6s var(--ease) infinite;
+}
+
+@keyframes portraitFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 @media (min-width: 768px) {

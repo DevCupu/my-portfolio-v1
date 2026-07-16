@@ -10,7 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <article class="bg-white dark:bg-[#141416] rounded-2xl border border-gray-100 dark:border-white/10 overflow-hidden transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+  <article v-reveal class="fade-in bg-white dark:bg-[#141416] rounded-2xl border border-gray-100 dark:border-white/10 overflow-hidden transition duration-200 hover:-translate-y-1 hover:shadow-lg">
     <div class="bg-parchment dark:bg-white/5">
       <img v-if="image" :src="image" :alt="title" loading="lazy" class="w-full h-48 object-cover" />
       <div v-else class="w-full h-48 grid place-items-center gap-1.5 text-gray-400 dark:text-gray-500">

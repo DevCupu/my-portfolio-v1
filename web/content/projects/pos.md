@@ -21,7 +21,7 @@ gallery:
     alt: Riwayat Transaksi — rekap pendapatan dan transaksi yang sudah dibayar
 github: https://github.com/DevCupu/laravel-pos-system
 home:
-  order: 2
+  order: 4
   title: POS System
   summary: Point of Sale web app for cafés
   description: "Laravel Web-based Point of Sale untuk manajemen kafe dengan fitur lengkap: manajemen menu, pesanan, meja, pembayaran, dan kontrol akses pengguna."
