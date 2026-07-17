@@ -27,7 +27,7 @@ function next() {
       <Transition name="gallery-fade" mode="out-in">
         <img
           :key="images[index].src"
-          :src="images[index].src"
+          :src="asset(images[index].src)"
           :alt="images[index].alt"
           class="w-full h-64 md:h-80 object-cover"
         />
@@ -53,7 +53,7 @@ function next() {
         :aria-label="`Show image ${i + 1}: ${img.alt}`"
         @click="index = i"
       >
-        <img :src="img.src" :alt="img.alt" class="w-full h-full object-cover" />
+        <img :src="asset(img.src)" :alt="img.alt" class="w-full h-full object-cover" />
       </button>
     </div>
   </div>

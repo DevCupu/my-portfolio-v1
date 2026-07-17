@@ -40,7 +40,7 @@ useHead({
 
           <ProjectGallery v-if="project.gallery?.length" :images="project.gallery" />
           <div v-else-if="project.image" class="rounded-2xl overflow-hidden bg-gray-100 dark:bg-white/10 shadow-sm">
-            <img :src="project.image.src" :alt="project.image.alt" class="w-full h-64 md:h-80 object-cover" />
+            <img :src="asset(project.image.src)" :alt="project.image.alt" class="w-full h-64 md:h-80 object-cover" />
           </div>
           <div v-else class="rounded-2xl bg-gray-100 dark:bg-white/10 shadow-sm h-64 md:h-80 grid place-items-center gap-2 text-gray-400 dark:text-gray-500">
             <Icon name="feather:image" class="w-8 h-8" />

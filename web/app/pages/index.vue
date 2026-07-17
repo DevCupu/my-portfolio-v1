@@ -270,7 +270,7 @@ useSeoMeta({
               <a href="#work" class="btn-pill" v-magnetic>
                 <Icon name="feather:layers" class="w-4 h-4" /> View my work
               </a>
-              <a href="/Ibnu-Tamiyya-AlKharoni-CV.pdf" target="_blank" rel="noopener" class="btn-ghost" v-magnetic>
+              <a :href="asset('/Ibnu-Tamiyya-AlKharoni-CV.pdf')" target="_blank" rel="noopener" class="btn-ghost" v-magnetic>
                 <Icon name="feather:download" class="w-4 h-4" /> Download CV
               </a>
             </div>
@@ -293,7 +293,7 @@ useSeoMeta({
 
           <div class="hero-photo order-1 md:order-2 flex justify-center md:justify-end">
             <div class="hero-portrait">
-              <img src="/images/ib.jpeg" alt="Portrait of Ibnu Tamiyya AlKharoni" class="hero-portrait__img" />
+              <img :src="asset('/images/ib.jpeg')" alt="Portrait of Ibnu Tamiyya AlKharoni" class="hero-portrait__img" />
               <div class="hero-portrait__chip" :class="{ 'role-swap': roleSwap }">
                 <Icon :name="`feather:${roles[roleIndex][0]}`" class="w-4 h-4" />
                 <span>{{ roles[roleIndex][1] }}</span>
@@ -356,14 +356,14 @@ useSeoMeta({
             <h3>Backend</h3>
           </div>
           <div class="stack-card__list">
-            <span class="stack-pill"><img src="/images/tech/laravel.svg" alt="">Laravel</span>
-            <span class="stack-pill"><img src="/images/tech/nodejs.svg" alt="">Node.js</span>
-            <span class="stack-pill"><img src="/images/tech/express.svg" alt="">Express</span>
-            <span class="stack-pill"><img src="/images/tech/go.svg" alt="">Go</span>
-            <span class="stack-pill"><img src="/images/tech/gin.svg" alt="">Gin</span>
-            <span class="stack-pill"><img src="/images/tech/fiber.svg" alt="">Fiber</span>
-            <span class="stack-pill"><img src="/images/tech/python.svg" alt="">Python</span>
-            <span class="stack-pill"><img src="/images/tech/php.svg" alt="">PHP</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/laravel.svg')" alt="">Laravel</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/nodejs.svg')" alt="">Node.js</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/express.svg')" alt="">Express</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/go.svg')" alt="">Go</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/gin.svg')" alt="">Gin</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/fiber.svg')" alt="">Fiber</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/python.svg')" alt="">Python</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/php.svg')" alt="">PHP</span>
           </div>
         </div>
 
@@ -373,10 +373,10 @@ useSeoMeta({
             <h3>Frontend</h3>
           </div>
           <div class="stack-card__list">
-            <span class="stack-pill"><img src="/images/tech/vue.svg" alt="">Vue.js</span>
-            <span class="stack-pill"><img src="/images/tech/livewire.svg" alt="">Livewire</span>
-            <span class="stack-pill"><img src="/images/tech/tailwindcss.svg" alt="">Tailwind</span>
-            <span class="stack-pill"><img src="/images/tech/vite.svg" alt="">Vite</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/vue.svg')" alt="">Vue.js</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/livewire.svg')" alt="">Livewire</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/tailwindcss.svg')" alt="">Tailwind</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/vite.svg')" alt="">Vite</span>
           </div>
         </div>
 
@@ -386,10 +386,10 @@ useSeoMeta({
             <h3>Database</h3>
           </div>
           <div class="stack-card__list">
-            <span class="stack-pill"><img src="/images/tech/mysql.svg" alt="">MySQL</span>
-            <span class="stack-pill"><img src="/images/tech/postgresql.svg" alt="">PostgreSQL</span>
-            <span class="stack-pill"><img src="/images/tech/mongodb.svg" alt="">MongoDB</span>
-            <span class="stack-pill"><img src="/images/tech/firebase.svg" alt="">Firestore</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/mysql.svg')" alt="">MySQL</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/postgresql.svg')" alt="">PostgreSQL</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/mongodb.svg')" alt="">MongoDB</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/firebase.svg')" alt="">Firestore</span>
           </div>
         </div>
 
@@ -399,11 +399,11 @@ useSeoMeta({
             <h3>Cloud &amp; DevOps</h3>
           </div>
           <div class="stack-card__list">
-            <span class="stack-pill"><img src="/images/tech/docker.svg" alt="">Docker</span>
-            <span class="stack-pill"><img src="/images/tech/aws.svg" alt="">AWS</span>
-            <span class="stack-pill"><img src="/images/tech/googlecloud.svg" alt="">GCP</span>
-            <span class="stack-pill"><img src="/images/tech/git.svg" alt="">Git</span>
-            <span class="stack-pill"><img src="/images/tech/postman.svg" alt="">Postman</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/docker.svg')" alt="">Docker</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/aws.svg')" alt="">AWS</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/googlecloud.svg')" alt="">GCP</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/git.svg')" alt="">Git</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/postman.svg')" alt="">Postman</span>
           </div>
         </div>
       </div>
@@ -415,7 +415,7 @@ useSeoMeta({
         <div class="grid md:grid-cols-5 gap-12 md:gap-16 items-center">
           <div v-reveal class="fade-in-left md:col-span-2 flex justify-center md:justify-start">
             <div class="w-56 h-72 md:w-full md:h-96 rounded-2xl overflow-hidden ring-1 ring-gray-200 dark:ring-white/10 shadow-lg">
-              <img src="/images/ib.jpeg" alt="Portrait of Ibnu Tamiyya AlKharoni" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              <img :src="asset('/images/ib.jpeg')" alt="Portrait of Ibnu Tamiyya AlKharoni" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
           </div>
 

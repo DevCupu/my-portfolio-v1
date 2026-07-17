@@ -18,7 +18,7 @@ defineProps<{
     :class="stagger === 2 ? 'stagger-2' : 'stagger-1'"
   >
     <div class="card-media bg-parchment">
-      <img v-if="image" :src="image" :alt="title" loading="lazy" class="w-full h-48 md:h-56 object-cover" />
+      <img v-if="image" :src="asset(image)" :alt="title" loading="lazy" class="w-full h-48 md:h-56 object-cover" />
       <div v-else class="w-full h-48 md:h-56 grid place-items-center gap-1.5 text-gray-400 dark:text-gray-500">
         <Icon name="feather:image" class="w-6 h-6" />
         <span class="text-xs">Screenshot coming soon</span>
