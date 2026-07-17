@@ -334,7 +334,7 @@ useSeoMeta({
       <div class="relative marquee marquee--ltr mb-4">
         <div class="marquee__track">
           <span v-for="(tech, i) in [...stackRowA, ...stackRowA]" :key="`a${i}`" class="tech-chip">
-            <img v-if="tech.logo" class="tech-logo" :src="tech.logo" alt="" />
+            <img v-if="tech.logo" class="tech-logo" :src="asset(tech.logo)" alt="" />
             <Icon v-else :name="`feather:${tech.icon}`" class="tech-logo-glyph" />
             {{ tech.label }}
           </span>
@@ -343,7 +343,7 @@ useSeoMeta({
       <div class="relative marquee marquee--rtl mb-14">
         <div class="marquee__track">
           <span v-for="(tech, i) in [...stackRowB, ...stackRowB]" :key="`b${i}`" class="tech-chip">
-            <img class="tech-logo" :class="{ 'tech-logo--wide': tech.wide }" :src="tech.logo" alt="" />
+            <img class="tech-logo" :class="{ 'tech-logo--wide': tech.wide }" :src="asset(tech.logo)" alt="" />
             {{ tech.label }}
           </span>
         </div>
