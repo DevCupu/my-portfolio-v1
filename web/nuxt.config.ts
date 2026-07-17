@@ -2,7 +2,7 @@
 // ponytail: baseURL is a literal, not read from NUXT_APP_BASE_URL — that env-var
 // override breaks Nitro's prerender crawler (it stops after 5 routes). If the repo
 // is ever renamed, update this string.
-const baseURL = '/template-portfolio-ib/'
+const baseURL = '/my-portfolio-v1/'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
