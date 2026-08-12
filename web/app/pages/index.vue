@@ -138,6 +138,9 @@ const stackRowB = [
   { logo: '/images/tech/fiber.svg', label: 'Fiber' },
   { logo: '/images/tech/vue.svg', label: 'Vue.js' },
   { logo: '/images/tech/tailwindcss.svg', label: 'Tailwind CSS' },
+  { logo: '/images/tech/bootstrap.svg', label: 'Bootstrap' },
+  { logo: '/images/tech/html5.svg', label: 'HTML5' },
+  { logo: '/images/tech/css3.svg', label: 'CSS3' },
   { logo: '/images/tech/git.svg', label: 'Git' },
   { logo: '/images/tech/postman.svg', label: 'Postman' },
   { logo: '/images/tech/vite.svg', label: 'Vite' }
@@ -178,8 +181,8 @@ useSeoMeta({
       :class="{ 'shadow-sm': scrolled }"
     >
       <div class="max-w-6xl mx-auto px-6 lg:px-8">
-        <div class="flex justify-between items-center py-5">
-          <a href="#home" class="flex items-center gap-2 text-lg font-semibold tracking-tight text-ink dark:text-white transition-all duration-300 hover:opacity-70">
+        <div class="flex justify-between items-center py-2 sm:py-5">
+          <a href="#home" class="flex items-center gap-2 text-base sm:text-lg font-semibold tracking-tight text-ink dark:text-white transition-all duration-300 hover:opacity-70">
             <span>Ib</span>
             <span class="text-accent dark:text-[#2997ff]">.</span>
           </a>
@@ -206,7 +209,7 @@ useSeoMeta({
               type="button"
               aria-label="Toggle dark mode"
               title="Toggle dark mode"
-              class="theme-toggle relative w-10 h-10 grid place-items-center rounded-full border border-gray-200 text-gray-700 hover:text-ink hover:border-gray-300 dark:border-white/15 dark:text-gray-200 dark:hover:text-white transition-colors"
+              class="theme-toggle relative w-8 h-8 sm:w-10 sm:h-10 grid place-items-center rounded-full border border-gray-200 text-gray-700 hover:text-ink hover:border-gray-300 dark:border-white/15 dark:text-gray-200 dark:hover:text-white transition-colors"
               @click="toggleTheme"
             >
               <svg class="icon-moon w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -222,8 +225,8 @@ useSeoMeta({
         </div>
 
         <div class="mobile-menu md:hidden border-t border-gray-100 dark:border-white/10 bg-white dark:bg-[#0a0a0b]" :class="{ open: mobileOpen }">
-          <nav class="py-6">
-            <div class="flex flex-col space-y-5">
+          <nav class="py-2">
+            <div class="flex flex-col space-y-2.5">
               <a
                 v-for="item in navItems"
                 :key="item.href"
@@ -232,7 +235,7 @@ useSeoMeta({
                 @click="closeMobileMenu"
               >{{ t(item.key) }}</a>
               <NuxtLink to="/products" class="text-sm text-gray-600 hover:text-ink dark:text-gray-300 dark:hover:text-white transition-colors mobile-nav-item" @click="closeMobileMenu">Products</NuxtLink>
-              <div class="flex items-center gap-3 pt-2">
+              <div class="flex items-center gap-3 pt-1">
                 <span class="text-xs text-gray-500 dark:text-gray-400">Language</span>
                 <button type="button" class="lang-switch text-xs px-2 py-1 rounded-md border border-gray-200 dark:border-white/15" @click="setLang('id')">ID</button>
                 <button type="button" class="lang-switch text-xs px-2 py-1 rounded-md border border-gray-200 dark:border-white/15" @click="setLang('en')">EN</button>
@@ -376,6 +379,9 @@ useSeoMeta({
             <span class="stack-pill"><img :src="asset('/images/tech/vue.svg')" alt="">Vue.js</span>
             <span class="stack-pill"><img :src="asset('/images/tech/livewire.svg')" alt="">Livewire</span>
             <span class="stack-pill"><img :src="asset('/images/tech/tailwindcss.svg')" alt="">Tailwind</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/bootstrap.svg')" alt="">Bootstrap</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/html5.svg')" alt="">HTML</span>
+            <span class="stack-pill"><img :src="asset('/images/tech/css3.svg')" alt="">CSS</span>
             <span class="stack-pill"><img :src="asset('/images/tech/vite.svg')" alt="">Vite</span>
           </div>
         </div>

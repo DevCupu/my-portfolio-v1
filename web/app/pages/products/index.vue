@@ -32,9 +32,17 @@ const { data: products } = await useAsyncData('all-products', () => queryCollect
           />
         </section>
 
-        <section v-else class="rounded-3xl border border-dashed border-gray-200 dark:border-white/10 py-20 text-center text-gray-400 dark:text-gray-500">
-          <Icon name="feather:package" class="w-8 h-8 mx-auto mb-3" />
-          <p>Belum ada produk yang dipublikasikan — coming soon.</p>
+        <section v-else class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ProductCard
+            v-for="n in 3"
+            :key="n"
+            title="Product"
+            tagline="Kontennya sedang disiapkan — segera hadir di sini."
+            price="—"
+            link="#"
+            :tags="['Coming soon']"
+            coming-soon
+          />
         </section>
       </div>
     </main>

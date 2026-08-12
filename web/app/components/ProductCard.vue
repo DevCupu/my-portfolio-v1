@@ -6,17 +6,22 @@ defineProps<{
   image?: string
   link: string
   tags: string[]
+  comingSoon?: boolean
 }>()
 </script>
 
 <template>
   <article v-reveal class="fade-in bg-white dark:bg-[#141416] rounded-2xl border border-gray-100 dark:border-white/10 overflow-hidden transition duration-200 hover:-translate-y-1 hover:shadow-lg">
-    <div class="bg-parchment dark:bg-white/5">
+    <div class="bg-parchment dark:bg-white/5 relative">
       <img v-if="image" :src="asset(image)" :alt="title" loading="lazy" class="w-full h-48 object-cover" />
       <div v-else class="w-full h-48 grid place-items-center gap-1.5 text-gray-400 dark:text-gray-500">
         <Icon name="feather:package" class="w-6 h-6" />
         <span class="text-xs">Preview coming soon</span>
       </div>
+      <span v-if="comingSoon" class="absolute top-3 right-3 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/90 dark:bg-black/70 text-[11px] font-semibold text-ink dark:text-white border border-gray-200 dark:border-white/15">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+        Coming soon
+      </span>
     </div>
     <div class="p-6">
       <h3 class="text-lg font-semibold text-ink dark:text-white mb-1">{{ title }}</h3>
