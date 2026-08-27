@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'motion-v/nuxt'
   ],
 
   css: ['~/assets/css/main.css'],
@@ -21,7 +22,7 @@ export default defineNuxtConfig({
     baseURL,
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      title: 'Ibnu Tamiyya AlKharoni — Backend Developer',
+      title: 'Ibnu Tamiyya AlKharoni — AI Application Engineer',
       link: [{ rel: 'icon', type: 'image/png', href: `${baseURL}images/i.png` }],
       bodyAttrs: {
         class: 'bg-white text-ink antialiased dark:bg-[#0a0a0b] dark:text-white transition-colors duration-500'

@@ -7,9 +7,10 @@ const translations = {
     'nav.contact': 'Contact',
     'section.about': 'About',
     'section.work': 'Featured Projects',
-    'hero.subtitle': 'I design and ship backend systems that are simple, scalable, and reliable.',
+    'hero.subtitle':
+      'I build AI-powered applications — integrating LLMs, RAG pipelines, and AI agents — on top of reliable backend systems.',
     'about.description':
-      'Junior Backend Developer focused on building Laravel-based systems and JavaScript (Express.js) RESTful APIs. Experienced in database design, authentication, Docker, and deploying services to AWS and GCP. Currently learning Golang for scalable, high-performance backend architectures.',
+      'AI Application Engineer who builds apps powered by LLMs — integrating ChatGPT, Gemini, and Claude, building RAG so AI can read documents, and creating AI agents that carry out tasks. Grounded in solid backend engineering: Laravel and Express.js APIs, database design (including vector databases), Docker, and deployment to AWS and GCP.',
     'work.dante.title': 'Dante Pine Enrekang Tourism Platform',
     'work.dante.subtitle': 'Tourism platform with public landing page and admin portal.',
     'work.dante.description':
@@ -23,9 +24,10 @@ const translations = {
     'nav.contact': 'Kontak',
     'section.about': 'Tentang',
     'section.work': 'Proyek Unggulan',
-    'hero.subtitle': 'Saya merancang dan membangun sistem backend yang sederhana, skalabel, dan andal.',
+    'hero.subtitle':
+      'Saya membangun aplikasi berbasis AI — integrasi LLM, RAG, dan AI agent — di atas sistem backend yang andal.',
     'about.description':
-      'Junior Backend Developer yang fokus membangun sistem berbasis Laravel dan RESTful API dengan JavaScript (Express.js). Berpengalaman dalam desain database, autentikasi, Docker, dan deployment layanan ke AWS dan GCP. Saat ini sedang mempelajari Golang untuk arsitektur backend yang skalabel dan high-performance.',
+      'AI Application Engineer yang membangun aplikasi bertenaga LLM — mengintegrasikan ChatGPT, Gemini, dan Claude, membangun RAG agar AI bisa membaca dokumen, serta membuat AI agent yang menjalankan tugas. Didukung fondasi backend yang kuat: API Laravel dan Express.js, desain database (termasuk vector database), Docker, dan deployment ke AWS serta GCP.',
     'work.dante.title': 'Platform Pariwisata Dante Pine Enrekang',
     'work.dante.subtitle': 'Platform pariwisata dengan landing page publik dan portal admin.',
     'work.dante.description':

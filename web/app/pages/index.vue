@@ -49,8 +49,8 @@ function onScroll() {
 // ---- Typewriter ----
 const typewriterText = ref('')
 const titles = [
-  'Junior Backend Engineer & Cloud Enthusiast',
-  'Building Scalable Web Apps with Laravel, Go & Express'
+  'AI Application Engineer — LLM, RAG & Agents',
+  'Backend Engineer — Laravel, Node.js & Go'
 ]
 function startTypewriter() {
   let titleIndex = 0
@@ -88,9 +88,9 @@ function startTypewriter() {
 
 // ---- Rotating role chip ----
 const roles: [string, string][] = [
-  ['server', 'Backend Developer'],
-  ['cloud', 'Cloud Engineer'],
-  ['code', 'Web Developer']
+  ['cpu', 'AI Application Engineer'],
+  ['server', 'Backend Engineer'],
+  ['zap', 'LLM & RAG Builder']
 ]
 const roleIndex = ref(0)
 const roleSwap = ref(false)
@@ -116,6 +116,10 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 
 // ---- Tech stack marquee (each row duplicated for a seamless loop) ----
 const stackRowA = [
+  { icon: 'cpu', label: 'LLM APIs' },
+  { icon: 'search', label: 'RAG' },
+  { icon: 'zap', label: 'AI Agents' },
+  { icon: 'link', label: 'LangChain' },
   { logo: '/images/tech/laravel.svg', label: 'Laravel 12' },
   { logo: '/images/tech/php.svg', label: 'PHP' },
   { logo: '/images/tech/livewire.svg', label: 'Livewire 3' },
@@ -166,8 +170,8 @@ function submitForm() {
 }
 
 useSeoMeta({
-  title: 'Ibnu Tamiyya AlKharoni — Backend Developer',
-  description: 'I design and ship backend systems that are simple, scalable, and reliable.'
+  title: 'Ibnu Tamiyya AlKharoni — AI Application Engineer',
+  description: 'I build AI-powered applications — LLM integration, RAG, and AI agents — backed by solid backend engineering.'
 })
 </script>
 
@@ -254,7 +258,7 @@ useSeoMeta({
         <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div class="text-center md:text-left order-2 md:order-1">
             <span class="hero-meta inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full bg-parchment dark:bg-white/5 dark:ring-1 dark:ring-white/10 text-xs font-medium text-gray-600 dark:text-gray-300">
-              Available for backend &amp; cloud projects
+              Available for AI application &amp; backend projects
             </span>
 
             <h1 class="hero-text display text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.06] text-ink dark:text-white mb-3">
@@ -330,7 +334,7 @@ useSeoMeta({
         </p>
         <h2 class="display text-3xl md:text-5xl text-ink dark:text-white mb-4">Tools I build with</h2>
         <p class="text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
-          A focused backend-first toolkit — from Laravel &amp; Node APIs to databases, containers, and cloud deployment.
+          A toolkit for building AI-powered applications — LLM integration, RAG, and agents — backed by solid backend, database, and cloud deployment skills.
         </p>
       </div>
 
@@ -352,8 +356,23 @@ useSeoMeta({
         </div>
       </div>
 
-      <div class="relative max-w-6xl mx-auto px-6 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="relative max-w-6xl mx-auto px-6 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <div v-reveal class="stack-card fade-in stagger-1">
+          <div class="stack-card__head">
+            <span class="stack-card__icon" style="--c:#8B5CF6"><Icon name="feather:cpu" /></span>
+            <h3>AI &amp; LLM</h3>
+          </div>
+          <div class="stack-card__list">
+            <span class="stack-pill"><Icon name="feather:cpu" />LLM Integration</span>
+            <span class="stack-pill"><Icon name="feather:search" />RAG</span>
+            <span class="stack-pill"><Icon name="feather:zap" />AI Agents</span>
+            <span class="stack-pill"><Icon name="feather:link" />LangChain</span>
+            <span class="stack-pill"><Icon name="feather:edit-3" />Prompt Engineering</span>
+            <span class="stack-pill"><Icon name="feather:database" />Vector Database</span>
+          </div>
+        </div>
+
+        <div v-reveal class="stack-card fade-in stagger-2">
           <div class="stack-card__head">
             <span class="stack-card__icon" style="--c:#FF2D20"><Icon name="feather:server" /></span>
             <h3>Backend</h3>
@@ -370,7 +389,7 @@ useSeoMeta({
           </div>
         </div>
 
-        <div v-reveal class="stack-card fade-in stagger-2">
+        <div v-reveal class="stack-card fade-in stagger-3">
           <div class="stack-card__head">
             <span class="stack-card__icon" style="--c:#06B6D4"><Icon name="feather:layout" /></span>
             <h3>Frontend</h3>
@@ -386,7 +405,7 @@ useSeoMeta({
           </div>
         </div>
 
-        <div v-reveal class="stack-card fade-in stagger-3">
+        <div v-reveal class="stack-card fade-in stagger-4">
           <div class="stack-card__head">
             <span class="stack-card__icon" style="--c:#4479A1"><Icon name="feather:database" /></span>
             <h3>Database</h3>
@@ -399,7 +418,7 @@ useSeoMeta({
           </div>
         </div>
 
-        <div v-reveal class="stack-card fade-in stagger-4">
+        <div v-reveal class="stack-card fade-in stagger-5">
           <div class="stack-card__head">
             <span class="stack-card__icon" style="--c:#2496ED"><Icon name="feather:cloud" /></span>
             <h3>Cloud &amp; DevOps</h3>
@@ -434,8 +453,19 @@ useSeoMeta({
               {{ t('about.description') }}
             </p>
 
-            <div class="grid sm:grid-cols-3 gap-6">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div v-reveal class="fade-in stagger-1">
+                <h4 class="flex items-center gap-2 text-sm font-semibold text-ink dark:text-white mb-3">
+                  <Icon name="feather:cpu" class="w-4 h-4 text-accent" /> AI &amp; LLM
+                </h4>
+                <div class="flex flex-wrap gap-2 text-xs">
+                  <span class="skill-tag bg-white border border-gray-200 text-gray-700 dark:bg-white/5 dark:border-white/10 dark:text-gray-300 px-2.5 py-1 rounded-full">LLM Integration</span>
+                  <span class="skill-tag bg-white border border-gray-200 text-gray-700 dark:bg-white/5 dark:border-white/10 dark:text-gray-300 px-2.5 py-1 rounded-full">RAG</span>
+                  <span class="skill-tag bg-white border border-gray-200 text-gray-700 dark:bg-white/5 dark:border-white/10 dark:text-gray-300 px-2.5 py-1 rounded-full">AI Agents</span>
+                  <span class="skill-tag bg-white border border-gray-200 text-gray-700 dark:bg-white/5 dark:border-white/10 dark:text-gray-300 px-2.5 py-1 rounded-full">Prompt Engineering</span>
+                </div>
+              </div>
+              <div v-reveal class="fade-in stagger-2">
                 <h4 class="flex items-center gap-2 text-sm font-semibold text-ink dark:text-white mb-3">
                   <Icon name="feather:monitor" class="w-4 h-4 text-accent" /> Frontend
                 </h4>
@@ -445,7 +475,7 @@ useSeoMeta({
                   <span class="skill-tag bg-white border border-gray-200 text-gray-700 dark:bg-white/5 dark:border-white/10 dark:text-gray-300 px-2.5 py-1 rounded-full">Bootstrap 5</span>
                 </div>
               </div>
-              <div v-reveal class="fade-in stagger-2">
+              <div v-reveal class="fade-in stagger-3">
                 <h4 class="flex items-center gap-2 text-sm font-semibold text-ink dark:text-white mb-3">
                   <Icon name="feather:server" class="w-4 h-4 text-accent" /> Backend
                 </h4>
@@ -457,7 +487,7 @@ useSeoMeta({
                   <span class="skill-tag bg-white border border-gray-200 text-gray-700 dark:bg-white/5 dark:border-white/10 dark:text-gray-300 px-2.5 py-1 rounded-full">PostgreSQL</span>
                 </div>
               </div>
-              <div v-reveal class="fade-in stagger-3">
+              <div v-reveal class="fade-in stagger-4">
                 <h4 class="flex items-center gap-2 text-sm font-semibold text-ink dark:text-white mb-3">
                   <Icon name="feather:tool" class="w-4 h-4 text-accent" /> Tools
                 </h4>
@@ -485,20 +515,17 @@ useSeoMeta({
           <h2 class="display text-3xl md:text-5xl text-ink dark:text-white">{{ t('section.work') }}</h2>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-          <ProjectCard
-            v-for="(project, i) in featuredProjects"
-            :key="project.path"
-            :slug="project.path?.split('/').pop() ?? ''"
-            :title="project.home!.title"
-            :summary="project.home!.summary"
-            :description="project.home!.description"
-            :tags="project.home!.tags"
-            :image="project.home!.image"
-            :github="project.github"
-            :stagger="((i % 2) + 1) as 1 | 2"
-          />
-        </div>
+        <ProjectCarousel
+          :projects="featuredProjects.map((project) => ({
+            slug: project.path?.split('/').pop() ?? '',
+            title: project.home!.title,
+            summary: project.home!.summary,
+            description: project.home!.description,
+            tags: project.home!.tags,
+            image: project.home!.image,
+            github: project.github
+          }))"
+        />
 
         <div v-reveal class="mt-14 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center fade-in">
           <p class="text-sm text-gray-500 dark:text-gray-400">Masih banyak project lain — lihat daftar lengkapnya.</p>

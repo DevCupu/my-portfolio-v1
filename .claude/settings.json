@@ -24,7 +24,15 @@
       "Bash(curl -s -o /dev/null -w \"status: %{http_code}\\\\n\" http://localhost:3000/projects/pos)",
       "Bash(netstat -ano)",
       "Bash(curl -s -o /dev/null -w \"ipv4 status: %{http_code}\\\\n\" --max-time 3 http://127.0.0.1:3000/)",
-      "Bash(curl -s -o /dev/null -w \"ipv6 status: %{http_code}\\\\n\" --max-time 3 http://[::1]:3000/)"
+      "Bash(curl -s -o /dev/null -w \"ipv6 status: %{http_code}\\\\n\" --max-time 3 http://[::1]:3000/)",
+      "Bash(NUXT_APP_BASE_URL=/template-portfolio-ib/ npx nuxi generate)",
+      "Bash(NUXT_APP_BASE_URL=/ npx nuxi generate)",
+      "Bash(command -v nvm)",
+      "Bash(command -v fnm)",
+      "Bash(where node *)",
+      "Read(//c/Program Files/nodejs/**)",
+      "Bash(grep -n \"NuxtLink\\\\|to=\\\\\"/\\\\|href=\\\\\"/\" web/app/components/ProjectHeader.vue web/app/pages/index.vue)",
+      "Bash(git stash *)"
     ]
   }
 }
