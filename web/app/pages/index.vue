@@ -49,8 +49,8 @@ function onScroll() {
 // ---- Typewriter ----
 const typewriterText = ref('')
 const titles = [
-  'AI Application Engineer — LLM, RAG & Agents',
-  'Backend Engineer — Laravel, Node.js & Go'
+  'Software Engineer — Backend & AI Integration',
+  'Software Engineer — Laravel, Node.js & Go'
 ]
 function startTypewriter() {
   let titleIndex = 0
@@ -88,9 +88,9 @@ function startTypewriter() {
 
 // ---- Rotating role chip ----
 const roles: [string, string][] = [
-  ['cpu', 'AI Application Engineer'],
-  ['server', 'Backend Engineer'],
-  ['zap', 'LLM & RAG Builder']
+  ['server', 'Software Engineer'],
+  ['database', 'Backend Systems'],
+  ['link', 'AI Integration']
 ]
 const roleIndex = ref(0)
 const roleSwap = ref(false)
@@ -170,8 +170,8 @@ function submitForm() {
 }
 
 useSeoMeta({
-  title: 'Ibnu Tamiyya AlKharoni — AI Application Engineer',
-  description: 'I build AI-powered applications — LLM integration, RAG, and AI agents — backed by solid backend engineering.'
+  title: 'Ibnu Tamiyya AlKharoni — Software Engineer',
+  description: 'Software Engineer building reliable backend systems and integrating AI where it adds practical value.'
 })
 </script>
 
@@ -258,7 +258,7 @@ useSeoMeta({
         <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div class="text-center md:text-left order-2 md:order-1">
             <span class="hero-meta inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full bg-parchment dark:bg-white/5 dark:ring-1 dark:ring-white/10 text-xs font-medium text-gray-600 dark:text-gray-300">
-              Available for AI application &amp; backend projects
+              Available for software engineering &amp; AI integration projects
             </span>
 
             <h1 class="hero-text display text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.06] text-ink dark:text-white mb-3">
@@ -334,7 +334,7 @@ useSeoMeta({
         </p>
         <h2 class="display text-3xl md:text-5xl text-ink dark:text-white mb-4">Tools I build with</h2>
         <p class="text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
-          A toolkit for building AI-powered applications — LLM integration, RAG, and agents — backed by solid backend, database, and cloud deployment skills.
+          A practical toolkit for building reliable software systems, with AI integration where it solves a real product or operational need.
         </p>
       </div>
 
@@ -360,7 +360,7 @@ useSeoMeta({
         <div v-reveal class="stack-card fade-in stagger-1">
           <div class="stack-card__head">
             <span class="stack-card__icon" style="--c:#8B5CF6"><Icon name="feather:cpu" /></span>
-            <h3>AI &amp; LLM</h3>
+            <h3>AI Integration</h3>
           </div>
           <div class="stack-card__list">
             <span class="stack-pill"><Icon name="feather:cpu" />LLM Integration</span>
@@ -456,7 +456,7 @@ useSeoMeta({
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div v-reveal class="fade-in stagger-1">
                 <h4 class="flex items-center gap-2 text-sm font-semibold text-ink dark:text-white mb-3">
-                  <Icon name="feather:cpu" class="w-4 h-4 text-accent" /> AI &amp; LLM
+                  <Icon name="feather:cpu" class="w-4 h-4 text-accent" /> AI Integration
                 </h4>
                 <div class="flex flex-wrap gap-2 text-xs">
                   <span class="skill-tag bg-white border border-gray-200 text-gray-700 dark:bg-white/5 dark:border-white/10 dark:text-gray-300 px-2.5 py-1 rounded-full">LLM Integration</span>

@@ -8,9 +8,9 @@ const translations = {
     'section.about': 'About',
     'section.work': 'Featured Projects',
     'hero.subtitle':
-      'I build AI-powered applications — integrating LLMs, RAG pipelines, and AI agents — on top of reliable backend systems.',
+      'I build reliable software systems and integrate AI where it adds practical value.',
     'about.description':
-      'AI Application Engineer who builds apps powered by LLMs — integrating ChatGPT, Gemini, and Claude, building RAG so AI can read documents, and creating AI agents that carry out tasks. Grounded in solid backend engineering: Laravel and Express.js APIs, database design (including vector databases), Docker, and deployment to AWS and GCP.',
+      'Software Engineer focused on backend systems, APIs, and practical product development. I also integrate AI capabilities such as document processing, LLM-powered workflows, and automation when they solve a clear business or operational need. My foundation includes Laravel and Express.js APIs, database design, Docker, and deployment to AWS and GCP.',
     'work.dante.title': 'Dante Pine Enrekang Tourism Platform',
     'work.dante.subtitle': 'Tourism platform with public landing page and admin portal.',
     'work.dante.description':
@@ -25,9 +25,9 @@ const translations = {
     'section.about': 'Tentang',
     'section.work': 'Proyek Unggulan',
     'hero.subtitle':
-      'Saya membangun aplikasi berbasis AI — integrasi LLM, RAG, dan AI agent — di atas sistem backend yang andal.',
+      'Saya membangun sistem software yang andal dan mengintegrasikan AI ketika memang memberi nilai praktis.',
     'about.description':
-      'AI Application Engineer yang membangun aplikasi bertenaga LLM — mengintegrasikan ChatGPT, Gemini, dan Claude, membangun RAG agar AI bisa membaca dokumen, serta membuat AI agent yang menjalankan tugas. Didukung fondasi backend yang kuat: API Laravel dan Express.js, desain database (termasuk vector database), Docker, dan deployment ke AWS serta GCP.',
+      'Software Engineer yang fokus membangun sistem backend, API, dan produk yang siap dipakai. Saya juga mengintegrasikan kemampuan AI seperti pemrosesan dokumen, alur kerja berbasis LLM, dan otomasi ketika memang menyelesaikan kebutuhan bisnis atau operasional yang jelas. Fondasi saya mencakup API Laravel dan Express.js, desain database, Docker, serta deployment ke AWS dan GCP.',
     'work.dante.title': 'Platform Pariwisata Dante Pine Enrekang',
     'work.dante.subtitle': 'Platform pariwisata dengan landing page publik dan portal admin.',
     'work.dante.description':
