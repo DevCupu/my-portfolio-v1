@@ -1,20 +1,20 @@
 ---
-title: AI Express (PDF RAG)
+title: Luma Docs
 kicker: Selected AI RAG Project
 subtitle: 2026 · Node.js & Local LLM (Ollama)
 tags: [Node.js, Express, Ollama, Multer, Vector Store, JavaScript]
 image:
   src: /images/projects/ai-express-ollama-rag-pdf/rag.png
-  alt: AI Express PDF RAG UI
+  alt: Luma Docs PDF RAG UI
 gallery:
   - src: /images/projects/ai-express-ollama-rag-pdf/rag.png
-    alt: AI Express PDF RAG Chatbot UI
+    alt: Luma Docs PDF RAG Chatbot UI
   - src: /images/projects/ai-express-ollama-rag-pdf/ai.png
-    alt: AI Express General AI Chat UI
+    alt: Luma Docs General AI Chat UI
 github: https://github.com/DevCupu/ai-express-ollama-rag-pdf
 home:
   order: 2
-  title: AI Express (PDF RAG)
+  title: Luma Docs
   summary: Document ingestion and Retrieval-Augmented Generation using local LLMs
   description: "Aplikasi RAG (Retrieval-Augmented Generation) berbasis Node.js/Express dan Ollama untuk mengunggah PDF, memproses chunk, menghasilkan embedding, dan melakukan tanya jawab secara lokal."
   tags: [Node.js, Express, Ollama, Vector Search]
@@ -30,7 +30,7 @@ listing:
 
 ## Project Overview
 
-**AI Express (PDF RAG)** adalah proyek yang mengimplementasikan dua kemampuan utama:
+**Luma Docs** adalah proyek yang mengimplementasikan dua kemampuan utama:
 
 1. **Document Ingestion**
    - Upload PDF.
