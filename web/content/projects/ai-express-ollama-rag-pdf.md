@@ -164,43 +164,35 @@ Secara garis besar, aplikasi ini memiliki interaksi antara **Browser UI**, **Ser
   2. Melakukan pencarian semantic (*cosine similarity*) terhadap vector store untuk mendapatkan `topK` chunk terdekat.
   3. Menyusun prompt gabungan yang berisi potongan teks dokumen (konteks) dan pertanyaan pengguna.
   4. Mengirimkan prompt gabungan tersebut ke Ollama untuk disintesis menjadi jawaban berbasis dokumen beserta sumber kutipan.
+## Overview
 
-## ⚙️ Catatan Penting & Parameter Tuning
+Luma Docs adalah asisten AI berbasis RAG untuk mengunggah dokumen PDF, membangun knowledge base, lalu menjawab pertanyaan berdasarkan isi dokumen.
 
-### Tuning Parameter RAG
-Kualitas pencarian dan respon dapat ditala melalui file `.env`:
-- `TOP_K` (default 5): Jumlah kandidat chunk yang diambil.
-- `MIN_SCORE` (default 0.18): Batas skor kemiripan terendah untuk memfilter konteks yang kurang relevan.
-- `CHUNK_SIZE` (default 1200) / `CHUNK_OVERLAP` (default 200): Mempengaruhi presisi dan kapasitas konteks.
-- `MAX_CONTEXT_CHARS` (default 9000): Batas maksimum panjang karakter seluruh konteks yang dimasukkan ke prompt.
-- `MAX_CHUNK_CHARS_IN_PROMPT` (default 1500): Batas maksimum karakter per chunk di dalam prompt.
-- `MAX_CONTEXT_CHUNKS` (default 10): Batas maksimum jumlah chunk yang dapat disematkan ke dalam prompt.
+## What It Solves
 
-*Catatan Batasan*:
-- PDF hasil scan gambar (tidak memiliki text layer) akan menghasilkan teks kosong pada `pdf-parse`. Penanganan berkas jenis ini memerlukan integrasi tambahan dengan modul OCR (seperti Tesseract).
-- Penyimpanan database vector menggunakan file JSONL sangat baik untuk keperluan demo/MVP. Namun, untuk skala data yang lebih besar, sangat disarankan menggunakan vector database khusus (misalnya Qdrant, Chroma, atau pgvector).
+Membantu pengguna menemukan informasi penting dari dokumen tanpa membaca seluruh file secara manual. Pemrosesan berjalan lokal melalui Ollama sehingga data tetap berada di lingkungan pengguna.
 
-## 💡 Pembelajaran & Pengembangan Selanjutnya
+## Key Features
 
-### Apa yang Dipelajari dari Project ini:
-- **Pair Programming Bareng AI Agent**: Belajar berkolaborasi dalam menulis kode, debugging, dan menyusun arsitektur UX dengan tetap melakukan verifikasi hasil runtime secara mandiri.
-- **ES Modules di Node.js**: Memahami konfigurasi `"type": "module"`, sintaks import/export modern, dan interoperabilitas dengan CommonJS.
-- **Desain API Express**: Menerapkan struktur folder Controller-Service yang bersih dan penanganan error global.
-- **Upload File**: Mengimplementasikan `multer` dengan memori penyimpanan sementara serta penanganan validasi berkas.
-- **Pemrosesan Teks & Embeddings**: Memahami perbedaan PDF text-based vs scan, proses segmentasi teks (*chunking*), dan visualisasi teks dalam bentuk representasi numerik multidimensi (vektor).
-- **Vector Search & RAG**: Memahami konsep Cosine Similarity untuk perangkingan teks, penyusunan prompt konteks, dan perancangan UI/UX transisi mode chat biasa vs chat dokumen.
+- **PDF ingestion:** mengekstrak teks dan memecah dokumen menjadi potongan yang siap dicari.
+- **Semantic search:** menemukan bagian dokumen yang paling relevan menggunakan embeddings dan cosine similarity.
+- **Context-aware chat:** menghasilkan jawaban dari konteks dokumen, bukan sekadar respons AI umum.
+- **Dual chat mode:** mendukung chat biasa dan chat berbasis dokumen aktif.
+- **Local AI workflow:** menggunakan Ollama untuk model chat dan embedding tanpa ketergantungan cloud.
 
-### Rencana Pengembangan Selanjutnya:
-1. **Kualitas Jawaban RAG**:
-   - Integrasi OCR (Tesseract) untuk mendukung dokumen PDF berupa scan gambar.
-   - Perekaman metadata tambahan seperti nomor halaman (`pageNumber`) agar penunjukan sumber lebih detail.
-   - Menampilkan sitasi detail di sisi Frontend UI agar pengguna dapat membaca potongan teks asli.
+## My Contribution
+
+Mengembangkan API Express, alur upload dan ekstraksi PDF, chunking teks, vector store JSONL, semantic retrieval, prompt RAG, serta antarmuka chat untuk dokumen.
+
+## Tech Stack
+
+Node.js, Express, Vanilla JavaScript, Tailwind CSS, Ollama, Multer, pdf-parse, dan local vector store berbasis JSONL.
+
+## Workflow
+
+Pengguna mengunggah PDF, sistem mengekstrak dan mengindeks isinya, lalu pertanyaan pengguna dicocokkan dengan konteks paling relevan sebelum dijawab oleh model AI lokal.
+
+## Links
+
+- GitHub Repository: [ai-express-ollama-rag-pdf](https://github.com/DevCupu/ai-express-ollama-rag-pdf)
    - Menerapkan mekanisme reranking pasca retrieval untuk meningkatkan relevansi konteks.
-2. **Skalabilitas Data**:
-   - Migrasi penyimpanan dari file JSONL ke vector database mandiri (Qdrant untuk skalabilitas, pgvector jika disatukan ke DB utama, atau Chroma untuk kemudahan lokal).
-   - Menambahkan mekanisme enkripsi hash file untuk mencegah duplikasi data dokumen.
-   - Endpoint pengelolaan dokumen (list & delete dokumen).
-3. **Keamanan & Stabilitas**:
-   - Penerapan Rate Limiting dan otentikasi dasar (Basic Auth) untuk mencegah penyalahgunaan API.
-   - Validasi input yang lebih ketat pada payload query dan file upload.
-   - Observability: Implementasi logging request ID dan pelacakan metrik waktu (time-to-first-byte, embed-time, query-time).
