@@ -200,6 +200,7 @@ useSeoMeta({
               :class="{ 'active-link': activeSection === item.href }"
             >{{ t(item.key) }}</a>
             <NuxtLink to="/products" class="text-sm text-gray-600 hover:text-ink dark:text-gray-400 dark:hover:text-white transition-colors nav-item">Products</NuxtLink>
+            <NuxtLink to="/certificates" class="text-sm text-gray-600 hover:text-ink dark:text-gray-400 dark:hover:text-white transition-colors nav-item">{{ t('nav.certificates') }}</NuxtLink>
           </nav>
 
           <div class="flex items-center gap-3">
@@ -239,6 +240,7 @@ useSeoMeta({
                 @click="closeMobileMenu"
               >{{ t(item.key) }}</a>
               <NuxtLink to="/products" class="text-sm text-gray-600 hover:text-ink dark:text-gray-300 dark:hover:text-white transition-colors mobile-nav-item" @click="closeMobileMenu">Products</NuxtLink>
+              <NuxtLink to="/certificates" class="text-sm text-gray-600 hover:text-ink dark:text-gray-300 dark:hover:text-white transition-colors mobile-nav-item" @click="closeMobileMenu">{{ t('nav.certificates') }}</NuxtLink>
               <div class="flex items-center gap-3 pt-1">
                 <span class="text-xs text-gray-500 dark:text-gray-400">Language</span>
                 <button type="button" class="lang-switch text-xs px-2 py-1 rounded-md border border-gray-200 dark:border-white/15" @click="setLang('id')">ID</button>

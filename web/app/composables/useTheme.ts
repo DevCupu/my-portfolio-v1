@@ -17,11 +17,8 @@ export function useTheme() {
 
   function init() {
     if (!import.meta.client) return
-    isDark.value = document.documentElement.classList.contains('dark')
     try {
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) apply(e.matches)
-      })
+      apply(localStorage.getItem('theme') === 'dark')
     } catch {}
   }
 

@@ -30,7 +30,7 @@ export default defineNuxtConfig({
       script: [
         {
           // Anti-flash: set theme class before first paint (ported from script.js)
-          innerHTML: `(function(){try{var t=localStorage.getItem('theme');if(!t)t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(t==='dark')document.documentElement.classList.add('dark');}catch(e){}})();`,
+          innerHTML: `(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark');}catch(e){}})();`,
           tagPosition: 'head'
         }
       ]

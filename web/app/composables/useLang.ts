@@ -5,6 +5,7 @@ const translations = {
     'nav.work': 'Work',
     'nav.blog': 'Blog',
     'nav.contact': 'Contact',
+    'nav.certificates': 'Certificates',
     'section.about': 'About',
     'section.work': 'Featured Projects',
     'hero.subtitle':
@@ -22,6 +23,7 @@ const translations = {
     'nav.work': 'Karya',
     'nav.blog': 'Blog',
     'nav.contact': 'Kontak',
+    'nav.certificates': 'Sertifikat',
     'section.about': 'Tentang',
     'section.work': 'Proyek Unggulan',
     'hero.subtitle':
