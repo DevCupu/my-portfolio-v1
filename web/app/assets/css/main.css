@@ -322,6 +322,18 @@ body {
     transform: scale(1.12);
 }
 
+/* Keep the mobile compositor work predictable on touch screens. */
+@media (max-width: 639px) {
+    .marquee__track {
+        animation: none;
+        transform: none;
+    }
+
+    .tilt-card {
+        transform: none !important;
+    }
+}
+
 .tech-logo-glyph {
     width: 17px;
     height: 17px;

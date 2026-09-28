@@ -4,7 +4,7 @@ kicker: Featured Document OCR Tool
 subtitle: v4.0 · Passport MRZ OCR untuk Manifest Umrah
 tags: [Vue 3, Express, Tesseract.js, Gemini AI, OpenRouter, ICAO 9303]
 image:
-  src: /images/projects/ocr-paspor-pro/ocr.png
+  src: /images/ocr-paspor.png
   alt: Scanner OCR Paspor Pro — upload dan review manifest paspor
 gallery:
   - src: /images/projects/ocr-paspor-pro/ocr.png
@@ -19,7 +19,7 @@ home:
   summary: Passport MRZ scanner with multi-engine OCR for Umrah travel manifests
   description: "Sistem manifest paspor jamaah Umrah dengan mesin auto-repair checksum ICAO 9303 — mendeteksi MRZ otomatis, memvalidasi masa berlaku paspor, dan menyimpan hasilnya ke database."
   tags: [Vue 3, Express, Tesseract.js, Gemini AI]
-  image: /images/projects/ocr-paspor-pro/ocr.png
+  image: /images/ocr-paspor.png
 listing:
   period: 2026 · Express + Vue 3
   type: Document OCR

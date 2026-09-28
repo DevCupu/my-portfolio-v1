@@ -4,7 +4,7 @@ kicker: Featured Laravel Platform
 subtitle: 2024 · Laravel 12 · Production-ready
 tags: [Laravel 12, Blade & Tailwind, MySQL/MariaDB, Booking System, Admin Panel]
 image:
-  src: /images/projects/tourism/2892faf0-c2e9-4f25-bd86-b8676b6f9d6f.png
+  src: /images/tourism.png
   alt: Dante Pine Enrekang tourism and booking platform
 github: https://github.com/DevCupu/laravel-project-pariwisata-system
 home:
@@ -13,7 +13,7 @@ home:
   summary: Tourism platform with public landing page and admin portal
   description: This Laravel 12 platform manages tourism content, activities, camping packages, café menu, and a centralized, facility-based booking system. Admins manage everything from the dashboard, while visitors book online.
   tags: [Laravel 12, MySQL, Blade & Tailwind, Booking System]
-  image: /images/projects/tourism/2892faf0-c2e9-4f25-bd86-b8676b6f9d6f.png
+  image: /images/tourism.png
 listing:
   period: 2024 · Production
   type: Booking

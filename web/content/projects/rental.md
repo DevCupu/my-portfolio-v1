@@ -4,7 +4,7 @@ kicker: Featured Fullstack Laravel Project
 subtitle: 2023 · Fullstack Laravel
 tags: [Laravel, Livewire, MySQL]
 image:
-  src: /images/projects/rental/depan-camping.png
+  src: /images/camping.png
   alt: Rental Outdoor System screenshot
 github: https://github.com/DevCupu/laravel-project-rental-outdoor-system
 home:
@@ -13,7 +13,7 @@ home:
   summary: Camping gear rental for Bontang Outdoor
   description: Web app untuk mengelola penyewaan alat outdoor dengan alur booking yang jelas — dari katalog, form pemesanan, hingga ringkasan biaya dan panel admin untuk stok serta status pembayaran.
   tags: [Laravel 12, MySQL, Booking System]
-  image: /images/projects/rental/depan-camping.png
+  image: /images/camping.png
 listing:
   period: 2023 · Laravel
   type: Rental

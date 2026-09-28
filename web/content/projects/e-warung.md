@@ -4,7 +4,7 @@ kicker: Fullstack SaaS Project
 subtitle: v1.0 · Modernisasi Kasir & Stok Warung
 tags: [Vue.js, Go, MySQL, Docker, Postman]
 image:
-  src: /images/projects/e-warung/hero.png
+  src: /images/e-warung.png
   alt: Landing page Warung Daeng — modernisasi warung dalam hitungan menit
 gallery:
   - src: /images/projects/e-warung/hero.png
@@ -21,7 +21,7 @@ home:
   summary: SaaS POS & inventory app for small shops (warung)
   description: "Modernisasi warung dalam hitungan menit — pencatatan stok, manajemen kasbon, dan laporan laba otomatis, menggantikan buku catatan manual."
   tags: [Vue.js, Go, MySQL, Docker]
-  image: /images/projects/e-warung/hero.png
+  image: /images/e-warung.png
 listing:
   period: Personal Project
   type: SaaS POS

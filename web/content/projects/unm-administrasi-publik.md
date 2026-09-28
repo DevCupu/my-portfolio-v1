@@ -4,7 +4,7 @@ kicker: Featured Laravel Project
 subtitle: Ilmu Administrasi Negara UNM · Laravel 12 · Inertia.js · Vue.js
 tags: [Laravel 12, Vue.js, Inertia.js, MySQL]
 image:
-  src: /images/projects/unm-administrasi-publik/hero.png
+  src: /images/unm sistem administrasi.png
   alt: Landing page Sistem Informasi Administrasi — Program Studi Ilmu Administrasi Negara UNM
 gallery:
   - src: /images/projects/unm-administrasi-publik/hero.png
@@ -17,7 +17,7 @@ home:
   summary: Public administration portal — Laravel 12, Inertia & Vue
   description: "Portal layanan akademik dan persuratan terpadu untuk Program Studi Ilmu Administrasi Negara UNM — ajukan surat, lacak status verifikasi, dan pantau progres tugas akhir dari satu tempat."
   tags: [Laravel 12, Vue.js, Inertia.js, MySQL]
-  image: /images/projects/unm-administrasi-publik/hero.png
+  image: /images/unm sistem administrasi.png
 listing:
   period: Laravel 12
   type: Web Admin

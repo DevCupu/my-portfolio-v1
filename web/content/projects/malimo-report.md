@@ -4,7 +4,7 @@ kicker: E-Government / Public Service
 subtitle: 2024 Fullstack Platform / Management Pengaduan
 tags: [Laravel 12, Tailwind CSS, Vite, MySQL, Breeze]
 image:
-  src: /images/projects/malimo-report/publik.png
+  src: /images/malimo.png
   alt: Malimo Report Landing Page
 github: https://github.com/DevCupu/laravel-project-management-pengaduan-system
 links:
@@ -16,7 +16,7 @@ home:
   summary: Community complaint platform for Kelurahan Malimongan
   description: Web untuk membantu masyarakat melaporkan keluhan kepada pemerintah kelurahan Malimongan, sekaligus memudahkan pemerintah kelurahan menindaklanjuti setiap laporan yang masuk.
   tags: [Laravel 12, Tailwind CSS, Vite, MySQL]
-  image: /images/projects/malimo-report/publik.png
+  image: /images/malimo.png
 listing:
   period: 2024 · Laravel 12
   type: Fullstack

@@ -4,7 +4,7 @@ kicker: Featured Laravel Platform
 subtitle: 2024 · Laravel 12 · In active development (~80%)
 tags: [Laravel 12, Tailwind CSS, Vite, MySQL, Role-based Access]
 image:
-  src: /images/projects/organization/siormawa.png
+  src: /images/siormawa.png
   alt: Dashboard SIORMAWA - Sistem Informasi Manajemen Organisasi Mahasiswa
 gallery:
   - src: /images/projects/organization/siormawa.png
@@ -18,7 +18,7 @@ home:
   summary: Student organization management system
   description: Platform manajemen organisasi kemahasiswaan dengan role terpisah untuk Admin Sistem, Admin Organisasi, dan Member. Setiap organisasi punya data anggota, event, dan dokumen sendiri — rapi, transparan, dan mudah diaudit.
   tags: [Laravel 12, Tailwind CSS, Vite, Multi-tenant]
-  image: /images/projects/organization/siormawa.png
+  image: /images/siormawa.png
 listing:
   period: 2024 · In progress
   type: Multi-tenant
