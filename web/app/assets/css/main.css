@@ -1063,7 +1063,7 @@ html.dark .form-input:focus {
 
 @media (min-width: 1024px) {
     .carousel__card {
-        width: calc(38% - 12px);
+        width: calc(33.333% - 16px);
     }
 }
 
