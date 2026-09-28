@@ -29,6 +29,7 @@ function next() {
           :key="images[index].src"
           :src="asset(images[index].src)"
           :alt="images[index].alt"
+          decoding="async"
           class="w-full h-64 md:h-80 object-contain p-2"
         />
       </Transition>
@@ -53,7 +54,7 @@ function next() {
         :aria-label="`Show image ${i + 1}: ${img.alt}`"
         @click="index = i"
       >
-        <img :src="asset(img.src)" :alt="img.alt" class="w-full h-full object-contain p-1" />
+        <img :src="asset(img.src)" :alt="img.alt" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" />
       </button>
     </div>
   </div>

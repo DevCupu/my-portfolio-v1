@@ -38,6 +38,7 @@ function scrollBy(dir: 1 | -1) {
               :src="asset(project.image)"
               :alt="project.title"
               loading="lazy"
+              decoding="async"
               class="w-full h-44 md:h-56 object-contain p-2"
             />
             <div

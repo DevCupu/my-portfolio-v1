@@ -24,6 +24,10 @@ function closeMobileMenu() {
 const scrolled = ref(false)
 const scrollProgress = ref(0)
 const activeSection = ref('#home')
+let scrollFrame = 0
+let typewriterTimer: ReturnType<typeof setTimeout> | undefined
+let roleInterval: ReturnType<typeof setInterval> | undefined
+let roleTimer: ReturnType<typeof setTimeout> | undefined
 const navItems = [
   { href: '#home', key: 'nav.home' as const },
   { href: '#about', key: 'nav.about' as const },
@@ -32,7 +36,7 @@ const navItems = [
   { href: '#contact', key: 'nav.contact' as const }
 ]
 
-function onScroll() {
+function updateScrollState() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
   scrolled.value = scrollTop > 20
   const docHeight = document.documentElement.scrollHeight - window.innerHeight
@@ -44,6 +48,14 @@ function onScroll() {
     if (el instanceof HTMLElement && scrollTop >= el.offsetTop - 120) current = item.href
   }
   activeSection.value = current
+}
+
+function onScroll() {
+  if (scrollFrame) return
+  scrollFrame = requestAnimationFrame(() => {
+    scrollFrame = 0
+    updateScrollState()
+  })
 }
 
 // ---- Typewriter ----
@@ -68,18 +80,18 @@ function startTypewriter() {
       if (charIndex === 0) {
         isDeleting = false
         titleIndex = (titleIndex + 1) % titles.length
-        setTimeout(tick, typeSpeed)
+        typewriterTimer = setTimeout(tick, typeSpeed)
       } else {
-        setTimeout(tick, deleteSpeed + Math.random() * 20)
+        typewriterTimer = setTimeout(tick, deleteSpeed + Math.random() * 20)
       }
     } else {
       charIndex++
       typewriterText.value = current.substring(0, charIndex)
       if (charIndex === current.length) {
         isDeleting = true
-        setTimeout(tick, delayBetween)
+        typewriterTimer = setTimeout(tick, delayBetween)
       } else {
-        setTimeout(tick, typeSpeed + Math.random() * 30)
+        typewriterTimer = setTimeout(tick, typeSpeed + Math.random() * 30)
       }
     }
   }
@@ -95,9 +107,9 @@ const roles: [string, string][] = [
 const roleIndex = ref(0)
 const roleSwap = ref(false)
 function startRoleRotation() {
-  setInterval(() => {
+  roleInterval = setInterval(() => {
     roleSwap.value = true
-    setTimeout(() => {
+    roleTimer = setTimeout(() => {
       roleIndex.value = (roleIndex.value + 1) % roles.length
       roleSwap.value = false
     }, 240)
@@ -112,7 +124,13 @@ onMounted(() => {
   startTypewriter()
   startRoleRotation()
 })
-onUnmounted(() => window.removeEventListener('scroll', onScroll))
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll)
+  if (scrollFrame) cancelAnimationFrame(scrollFrame)
+  if (typewriterTimer) clearTimeout(typewriterTimer)
+  if (roleInterval) clearInterval(roleInterval)
+  if (roleTimer) clearTimeout(roleTimer)
+})
 
 // ---- Tech stack marquee (each row duplicated for a seamless loop) ----
 const stackRowA = [
