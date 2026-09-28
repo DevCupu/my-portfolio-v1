@@ -32,30 +32,27 @@ listing:
   tags: [React, Supabase, Gemini API]
 ---
 
-## Overview
+Raudhah Barcode Manager is an internal operations platform for umrah and hajj travel teams. It digitizes pilgrim manifest management, operator assignment, visa data entry, and Raudhah QR Code tracking in one real-time dashboard.
 
-Raudhah Barcode Manager adalah dashboard operasional untuk travel umrah dan haji dalam mengelola data jemaah, pembagian tugas operator, dan proses QR Code Raudhah.
+## Technologies Used
 
-## Key Features
+- **React and TypeScript:** Responsive frontend for admins and operators.
+- **Supabase:** Database, authentication, and real-time status synchronization.
+- **Google Gemini API:** Extracting pilgrim and visa details from PDF or image documents.
+- **Tailwind CSS:** Consistent interface styling and responsive layouts.
+- **Excel and document processing:** Importing, exporting, and parsing operational data.
 
-- Ekstraksi data visa dari PDF atau gambar menggunakan Gemini AI.
-- Pembagian jemaah kepada operator dengan akses kerja masing-masing.
-- Dashboard real-time untuk status QR, progres, dan aktivitas tim.
-- Prioritas pengerjaan berdasarkan jadwal keberangkatan dari Madinah.
-- Impor dan ekspor data jemaah melalui Excel.
-- Kolom tambahan untuk data bus, hotel, mutawwif, atau rombongan.
+## Outcome
 
-## My Contribution
+The platform replaces scattered spreadsheets and manual coordination with a single operational workflow. Admins can distribute work, prioritize urgent pilgrims, and monitor QR Code progress while operators focus on their assigned queues.
 
-Mengembangkan dashboard operasional, alur admin dan operator, manajemen data jemaah, sinkronisasi real-time Supabase, serta integrasi Gemini AI.
+## Challenges and Learnings
 
-## Tech Stack
+The biggest challenge was translating a time-sensitive, multi-operator process into clear roles and status transitions. Designing the priority logic, real-time updates, and flexible custom fields improved my understanding of building software around changing operational rules rather than fixed forms.
 
-React 19, TypeScript, Vite, Tailwind CSS, Supabase, Google Gemini API, pdfjs-dist, SheetJS, Lucide Icons, dan Motion.
+## Stack
 
-## Workflow
-
-Import data atau scan visa → admin membagi jemaah → operator memperbarui status → admin memantau progres dan dokumentasi QR secara real-time.
+React · TypeScript · Supabase · Google Gemini API · Vite · Tailwind CSS · SheetJS · pdfjs-dist
 
 ## Links
 

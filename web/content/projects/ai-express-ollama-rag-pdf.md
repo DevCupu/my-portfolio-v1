@@ -30,29 +30,27 @@ listing:
   tags: [Node.js, Express, Ollama]
 ---
 
-## Overview
+Luma Docs is a local AI document assistant that turns uploaded PDFs into a searchable knowledge base. It combines semantic search with Retrieval-Augmented Generation (RAG) so users can ask questions and receive answers grounded in the selected document.
 
-Luma Docs adalah asisten AI berbasis RAG yang membantu pengguna memahami isi dokumen PDF melalui pencarian semantik dan model AI lokal.
+## Technologies Used
 
-## Key Features
+- **Node.js and Express:** Backend API handling uploads, document processing, and AI requests.
+- **Ollama:** Local chat and embedding models for private document processing.
+- **PDF parsing:** Extracting text from uploaded PDF files before indexing.
+- **Vector store:** JSONL-based storage for document chunks and embeddings.
+- **Vanilla JavaScript and Tailwind CSS:** Lightweight chat interface for document interaction.
 
-- Upload PDF dan ekstraksi teks otomatis.
-- Embeddings dan semantic search untuk menemukan konteks paling relevan.
-- Jawaban AI berdasarkan dokumen aktif, bukan tebakan umum.
-- Mode chat biasa dan chat berbasis dokumen.
-- Pemrosesan lokal menggunakan Ollama.
+## Outcome
 
-## My Contribution
+The project delivers a working local RAG workflow: upload a PDF, index its content, search for relevant context, and generate an answer based on the source document. It also supports both general chat and document-focused chat.
 
-Mengembangkan API Express, alur upload PDF, text chunking, vector store, retrieval, prompt RAG, dan antarmuka chat.
+## Challenges and Learnings
 
-## Tech Stack
+The main challenge was implementing the RAG pipeline without relying on a high-level framework. Building the chunking, embedding, similarity search, and context prompt manually strengthened my understanding of how document retrieval and grounded AI responses work end to end.
 
-Node.js, Express, JavaScript, Tailwind CSS, Ollama, Multer, pdf-parse, dan JSONL vector store.
+## Stack
 
-## Workflow
-
-Upload PDF → teks diindeks → pertanyaan dicari ke vector store → AI menjawab berdasarkan konteks yang ditemukan.
+Node.js · Express · Ollama · JavaScript · Tailwind CSS · pdf-parse · JSONL Vector Store
 
 ## Links
 
