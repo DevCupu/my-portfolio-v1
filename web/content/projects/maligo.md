@@ -4,7 +4,7 @@ kicker: Featured Laravel Project
 subtitle: Sistem Informasi Kependudukan & Bantuan Sosial — Kelurahan Malimongan
 tags: [Laravel, MySQL, JavaScript]
 image:
-  src: /images/projects/maligo/hero.png
+  src: /images/maligo.png
   alt: Landing page MaliGo.id
 gallery:
   - src: /images/projects/maligo/hero.png
@@ -19,7 +19,7 @@ home:
   summary: Population data & social assistance information system
   description: "Satu aplikasi untuk warga dan penyaluran bantuan sosial di Kelurahan Malimongan — cek status bantuan pakai NIK, infografis kependudukan, dan pengajuan layanan online."
   tags: [Laravel, MySQL, JavaScript]
-  image: /images/projects/maligo/hero.png
+  image: /images/maligo.png
 listing:
   period: Laravel
   type: Govt / Social
