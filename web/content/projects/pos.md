@@ -4,9 +4,11 @@ kicker: Featured Fullstack Laravel Project
 subtitle: 2024 · Backend & Fullstack Laravel
 tags: [Laravel, MySQL, Livewire, Tailwind CSS]
 image:
-  src: /images/projects/pos/pos.png
-  alt: POS System screenshot
+  src: /images/pos-system.png
+  alt: POS System application
 gallery:
+  - src: /images/pos-system.png
+    alt: POS System application overview
   - src: /images/projects/pos/pos.png
     alt: Landing page POS Kafe
   - src: /images/projects/pos/dashboard-kasir.png
@@ -26,7 +28,7 @@ home:
   summary: Point of Sale web app for cafés
   description: "Laravel Web-based Point of Sale untuk manajemen kafe dengan fitur lengkap: manajemen menu, pesanan, meja, pembayaran, dan kontrol akses pengguna."
   tags: [Laravel 12, MySQL, Livewire 3, Tailwind CSS]
-  image: /images/projects/pos/pos.png
+  image: /images/pos-system.png
 listing:
   period: 2024 · Laravel
   type: POS
@@ -48,6 +50,13 @@ POS Kafe dirancang sebagai satu aplikasi terpusat untuk kasir, dapur, dan admin.
 **Role:** Fullstack Laravel (backend + basic frontend).
 
 **Tech:** Laravel, Blade / Livewire · MySQL, Eloquent ORM.
+
+## Key features
+
+- Kasir membuat order dine-in atau take-away, memilih meja, dan memproses pembayaran.
+- Dapur menerima daftar pesanan dengan status yang dapat diperbarui secara langsung.
+- Admin mengelola menu, kategori, meja, metode pembayaran, dan hak akses pengguna.
+- Pemilik kafe dapat memantau ringkasan serta riwayat transaksi berdasarkan periode.
 
 ## Fitur utama
 
@@ -75,3 +84,15 @@ POS Kafe dirancang sebagai satu aplikasi terpusat untuk kasir, dapur, dan admin.
 - State POS tetap aman saat halaman di-refresh sehingga konteks order tidak hilang.
 - Logika bisnis dipisah ke service layer agar struktur kode tetap bersih.
 - Pengalaman penggunaan mendekati SPA berkat Livewire, tanpa framework frontend tambahan.
+
+## Outcome
+
+POS Kafe menyatukan operasional kasir, dapur, dan admin dalam satu alur kerja. Transaksi tercatat lebih rapi, status order mudah dipantau, dan laporan penjualan dapat diakses tanpa rekap manual.
+
+## Stack
+
+Laravel 12 · PHP · Livewire 3 · Blade · Tailwind CSS · MySQL · Eloquent ORM
+
+## Links
+
+- GitHub Repository: [laravel-pos-system](https://github.com/DevCupu/laravel-pos-system)

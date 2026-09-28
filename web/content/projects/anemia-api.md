@@ -4,8 +4,15 @@ kicker: Backend & Cloud Project
 subtitle: 2024 Cloud Computing / Backend REST API
 tags: [Node.js, REST API, GCP / Bangkit, MySQL, Docker]
 image:
-  src: /images/projects/anemia-api/Branding 2.png
-  alt: Anemia Detection API illustration
+  src: /images/anemia.png
+  alt: Anem.ai anemia detection application
+gallery:
+  - src: /images/anemia.png
+    alt: Anem.ai anemia detection application
+  - src: /images/projects/anemia-api/Branding 2.png
+    alt: Anemia Detection API project branding
+  - src: /images/projects/anemia-api/Screenshots Application anem.ai.png
+    alt: Anem.ai application screenshot
 github: https://github.com/Anemi-ai
 links:
   - label: "Organization GitHub: Anemi-ai"
@@ -20,7 +27,7 @@ home:
   summary: AI-based Anemia Detection App — Bangkit 2024 Capstone
   description: Express-based RESTful API yang memproses data pemeriksaan konjungtiva mata untuk mengklasifikasikan risiko anemia pasien — dirancang sebagai backend yang siap diintegrasikan ke aplikasi mobile atau web.
   tags: [Express.js, REST API, MySQL, GCP, Cloud Run, Docker]
-  image: /images/projects/anemia-api/Screenshots Application anem.ai.png
+  image: /images/anemia.png
 listing:
   period: 2024 · Backend
   type: AI / API
@@ -55,6 +62,13 @@ Sebagai Cloud Computing Engineer, saya bertanggung jawab untuk memastikan backen
 - Menangani deployment dan konfigurasi infrastruktur cloud (GCP/Bangkit).
 - Berkoordinasi dengan tim Machine Learning dan Android terkait kebutuhan API.
 
+## Key features
+
+- Endpoint untuk menerima data pemeriksaan dan menghubungkannya ke layanan inference.
+- Validasi request dan formatting respons agar mudah digunakan oleh aplikasi client.
+- Penyimpanan data hasil pemeriksaan untuk kebutuhan riwayat dan analisis.
+- Deployment backend di cloud agar dapat diakses oleh aplikasi mobile.
+
 ## Tech stack
 
 **Backend & Cloud**
@@ -75,6 +89,14 @@ Secara garis besar, alurnya adalah: aplikasi mobile mengirim data hasil pemroses
 - Mobile App → Backend API → ML Service (inference).
 - Backend mengelola validasi request, autentikasi (jika diperlukan), dan formatting respons.
 - Hasil prediksi dikembalikan ke client dan dapat dicatat di database.
+
+## Outcome
+
+Backend ini menjadi penghubung antara aplikasi Android dan model Machine Learning, sehingga hasil prediksi dapat dikonsumsi melalui API yang terstruktur dan siap dikembangkan lebih lanjut.
+
+## Stack
+
+Node.js · Express.js · REST API · MySQL · Google Cloud · Cloud Run · Docker · Postman
 
 ## Links
 
